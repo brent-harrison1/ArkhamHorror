@@ -1,0 +1,153 @@
+/*NEED TO UPDATE ALL CSS TO INCORPORATE MORE FLEXBOX AND GRID*/
+
+html {
+  background: url("images/ark1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  margin: 2em 7em;
+  background: rgba(132, 133, 135, 0.2);
+  text-shadow: 1px 1px 2px #4d0000;
+}
+
+header .main-header {
+  margin-bottom: -3%;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.panel {
+  height: 300px;
+  width: 100px;
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px black;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  padding-top: 15%;
+  transition: all 400ms ease-in-out;
+}
+
+.panel:hover {
+  flex-grow: 1.5;
+  font-size: 35px;
+  color: rgb(149, 150, 39);
+  border: 5px solid black;
+  box-shadow: 0 0 35px black;
+  border-radius: 10%;
+}
+
+.overview {
+  background-image: url("images/ark2.jpg");
+}
+
+/*Need to figure out how to make link not change color of text*/
+.overview a {
+  text-decoration: none;
+}
+
+.overview-main-heading {
+  text-align: center;
+  color: white;
+}
+
+.overview-video {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.overview-body-text {
+  border: 1px solid black;
+  border-radius: 15%;
+  margin: 1em auto;
+  box-shadow: 0 0 40px black;
+  background: linear-gradient(70deg, #523a16, #a67328);
+  font-family: serif;
+  font-weight: bold;
+}
+
+.overview-body-text p {
+  padding: 1.5em;
+  text-align: center;
+}
+
+.overview-home-btn {
+  text-align: center;
+  margin: 2em;
+}
+
+button {
+  background-color: darkslategray;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+.rules {
+  background-image: url("images/ark3.jpg");
+}
+
+.rules a {
+  text-decoration: none;
+}
+
+.dice-simulator {
+  background-image: url("images/ark4.jpg");
+}
+
+.dice-simulator a {
+  text-decoration: none;
+}
+
+.simulator-input-section {
+  border: 4px solid #2c2d2e;
+  background: -webkit-linear-gradient(85deg, #731717, black);
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.dice-num-section {
+  color: #2550a1;
+}
+
+.status-section {
+  color: #2550a1;
+}
+
+.blessed-word {
+  color: yellow;
+}
+
+.cursed-word {
+  color: red;
+}
+
+.dice-img-results {
+  height: 300px;
+  border: 2px solid white;
+  color: white;
+  font-size: 30px;
+}
+
+/*Need to figure out positioning of footer later
+footer {
+}
+*/
+
+/*Need to update with media query*/

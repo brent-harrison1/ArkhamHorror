@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arkham Overview</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dice Rolling Simulator</h1>
+    </header>
+    <main>
+      <div class="simulator-input-section">
+        <div class="dice-num-section">
+          <label for="diceNum">How many dice are you rolling?</label>
+          <input type="text" name="diceNum" id="diceNum" required />
+        </div>
+        <!--Still need to write JS for conditionals with below radio choices.  As of right now, doesn't use any of this info in function-->
+        <div class="status-section">
+          <label for="status"
+            >Are you <span class="blessed-word">BLESSED</span> or
+            <span class="cursed-word">CURSED</span>?</label
+          >
+          <br />
+          <input type="radio" name="status" id="blessed" value="blessed" /><span
+            class="blessed-word"
+            >Blessed</span
+          >
+          <input type="radio" name="status" id="cursed" value="cursed" /><span
+            class="cursed-word"
+            >Cursed</span
+          >
+        </div>
+        <div class="dice-btn">
+          <button onclick="rollDice()">Roll The Dice</button>
+        </div>
+      </div>
+      <div class="dice-img-results" id="dice-img-results"></div>
+      <div class="overview-home-btn">
+        <a href="index.html"><button>Return Home</button></a>
+      </div>
+    </main>
+    <footer>&copy; 2019 All Rights Reserved</footer>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
