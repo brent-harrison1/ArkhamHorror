@@ -1,0 +1,123 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 1em;
+    background-color: #151f11;
+    color: rgb(43, 255, 0);
+}
+
+.simulator-input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice-num-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice-num-section label {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.dice-num-section input {
+    text-align: center;
+    margin: .4em auto 0 auto;
+    width: 50%;
+}
+
+.status-section {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.status-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.blessed-word {
+    color: blue;
+}
+
+.cursed-word {
+    color: red;
+}
+
+.dice-btn {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dice-btn button {
+    display: block;
+}
+
+.end-results {
+    border: 2px solid white;
+    height: 60%;
+    width: 90%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#dice-img-results {
+    margin-top: .5em;
+    flex-grow: 2;
+    text-align: center;
+}
+
+#dice-img-results img {
+    margin: .2em;
+}
+
+#num-success {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.successRoll {
+    border: 2px solid green;
+}
+
+.failedRoll {
+    border: 2px solid red;
+}
+
+footer {
+    flex-shrink: 0;
+    margin-top: 1em;
+}

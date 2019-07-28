@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Arkham Horror</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <h1 class="main-header">Arkham Horror</h1>
-      <h2 class="secondary-header">-A Definitive Board Game Support Page-</h2>
-    </header>
-    <nav class="main-nav">
-      <!--Below "overview" onClick should link to shutup 
-        and sitdown video-->
-      <div class="overview panel">
-        <a href="overview.html"><h2>Overview of the Game</h2></a>
-      </div>
-      <div class="rules panel">
-        <a
-          href="https://images-cdn.fantasyflightgames.com/ffg_content/Arkham_Horror/AH_Rules_internat.pdf"
-          target="_blank"
-          ><h2>Rules</h2></a
-        >
-      </div>
-      <div class="dice-simulator panel">
-        <a href="dice-simulator.html"><h2>Dice Simulator</h2></a>
-      </div>
-    </nav>
-    <div class="buy-section">
-      <!--this section will have information and link 
-        to buy the board game-->
-    </div>
-    <!--Below quotes are going to be quotes from 
-      different character in game with pictures-->
-    <div class="quotes">
-      <div class="character1"></div>
-      <div class="character1"></div>
-      <div class="character1"></div>
-      <div class="character1"></div>
-    </div>
-    <footer>&copy; 2019 All Rights Reserved</footer>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Arkham Horror</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body onload="randomQuote();">
+        <header>
+            <h1>Arkham Horror</h1>
+            <h2>A Board Game Reference Page</h2>
+        </header>
+        <main>
+            <nav>
+                <div class="overview">
+                    <a href="overview.html">Overview of the Game</a>
+                </div>
+                <div class="rules">
+                    <a href="href="https://images-cdn.fantasyflightgames.com/ffg_content/Arkham_Horror/AH_Rules_internat.pdf" target="_blank">Rules</a>
+                </div>
+                <div class="dice-simulator">
+                    <a href="dice-simulator.html">Dice Simulator</a>
+                </div>
+            </nav>
+            <div class="quote-section">
+                <p id="rand-quote-p"></p>
+            </div>
+            <div class="image-section">
+                <img src="images/img-section1.jpg" alt="open board game">
+                <img src="images/img-section2.jpg" alt="sister mary character card">
+                <img src="images/img-section3.jpg" alt="board game box">
+            </div>
+            <div class="buy-section">
+                <p>If you would like to purchase your own copy of this wonderful game, click the button below!</p>
+                <a href="https://www.amazon.com/Fantasy-Flight-Games-Arkham-Horror/dp/1589942108" target="_blank"><button class="buy-button">Buy</button></a>
+            </div>
+        </main>
+        <footer>&copy; 2019 All Rights Reserved</footer>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
 </html>

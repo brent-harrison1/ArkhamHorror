@@ -5,47 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Arkham Overview</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="dice-roll.css" type="text/css" />
   </head>
   <body>
-    <header>
+    <header class="sim-header">
       <h1>Dice Rolling Simulator</h1>
     </header>
     <main>
       <div class="simulator-input-section">
         <div class="dice-num-section">
           <label for="diceNum">How many dice are you rolling?</label>
-          <input type="text" name="diceNum" id="diceNum" required />
+          <input type="number" min="1" max="16" name="diceNum" id="diceNum" required />
         </div>
-        <!--Still need to write JS for conditionals with below radio choices.  As of right now, doesn't use any of this info in function-->
         <div class="status-section">
-          <label for="status"
-            >Are you <span class="blessed-word">BLESSED</span> or
-            <span class="cursed-word">CURSED</span>?</label
-          >
-          <br />
-          <input type="radio" name="status" id="blessed" value="blessed" /><span
-            class="blessed-word"
-            >Blessed</span
-          >
-          <input type="radio" name="status" id="cursed" value="cursed" /><span
-            class="cursed-word"
-            >Cursed</span
-          >
+          <p>Are you <span class="blessed-word">BLESSED</span> or
+            <span class="cursed-word">CURSED</span>?</p>
+          <label for="status" class="status-label">
+            <input type="radio" name="status" id="blessed" value="blessed" /><span class="blessed-word">Blessed</span>
+            <input type="radio" name="status" id="cursed" value="cursed" /><span class="cursed-word">Cursed</span>
+            <input type="radio" name="status" id="neither" value="neither">Neither
+          </label>
         </div>
-        <div class="dice-btn">
-          <button onclick="rollDice()" id="rollDiceBtn">Roll The Dice</button>
-          <button type="submit" onClick="refreshPage()">Reset</button>
-        </div>
+      </div>
+      <div class="dice-btn">
+        <button onclick="rollDice()" id="rollDiceBtn">Roll The Dice</button>
+        <button type="submit" onClick="refreshPage()">Reset</button>
       </div>
       <div class="end-results">
         <div class="dice-img-results" id="dice-img-results"></div>
         <div class="dice-img-results" id="num-success"></div>
-        <div class="overview-home-btn"></div>
+        </div>
+      </div>
+      <div class="overview-home-btn">
         <a href="index.html"><button>Return Home</button></a>
       </div>
     </main>
-    <footer>&copy; 2019 All Rights Reserved</footer>
+    <footer class="sim-footer">&copy; 2019 All Rights Reserved</footer>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

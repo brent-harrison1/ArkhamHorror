@@ -38,8 +38,32 @@ function rollDice() {
   };
 }
 
-//below function is for the reset button to refresh page
-
-function refreshPage() {
+function refreshPage () {
   window.location.reload();
+}
+
+//Below is for the random quote section on main page
+
+function randomQuote() {
+  let quote1 = '"In his house at R\'lyeh dead Cthulhu waits dreaming.” ― H.P. Lovecraft, The Call of Cthulhu';
+  let quote2 = '“We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far.” ― H. P. Lovecraft, The Call of Cthulhu';
+  let quote3 = '“I have looked upon all the universe has to hold of horror, and even the skies of spring and flowers of summer must ever afterward be poison to me.” ― H.P. Lovecraft, The Call of Cthulhu';
+  let quote4 = '“The oldest and strongest emotion of mankind is fear, and the oldest and strongest kind of fear is fear of the unknown” ― H.P. Lovecraft, Supernatural Horror in Literature';
+  let quote5 = '“I have seen the dark universe yawning where the black planets roll without aim, Where they roll in their horror unheeded, Without knowledge, or lustre, or name.” ― H. P. Lovecraft, Nemesis';
+  let randQuote;
+  let randNum = Math.floor(Math.random() * 5) + 1;
+
+  if (randNum === 1) {
+    randQuote = quote1;
+  } else if (randNum === 2) {
+    randQuote = quote2;
+  } else if (randNum === 3) {
+    randQuote = quote3;
+  } else if (randNum === 4) {
+    randQuote = quote4;
+  } else {
+    randQuote = quote5;
+  }
+
+  document.getElementById("rand-quote-p").innerHTML = randQuote;
 }
