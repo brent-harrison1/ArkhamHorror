@@ -2,13 +2,10 @@
 body {
   background-image: url(images/ark1.jpg);
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*below color is just for initial visability.  Delete when unnecessary*/
   color: white;
 }
 

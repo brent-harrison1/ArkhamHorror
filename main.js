@@ -1,6 +1,12 @@
 //below function for roll the dice button for dice simulator
 
 function rollDice() {
+  //below adds class to end results section to alter styling for images
+  var changeResultCss = document.getElementById("end-results");
+  if(changeResultCss) {
+    changeResultCss.className += "end-results-after";
+  }
+
   let numDice = document.getElementById("diceNum").value;
   let successMin = 5;
   let blessedOption = document.getElementById("blessed");

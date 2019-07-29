@@ -1,7 +1,3 @@
-html {
-    width: 100%;
-    height: 100%;
-}
 
 body {
     background-color: gray;
@@ -9,18 +5,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100%;
 }
 
 header {
-    flex-shrink: 0;
+    flex: 1 1 0;
     font-weight: bold;
 }
 
 main {
-    flex-grow: 1;
-    flex-shrink: 0;
+    flex: 2 1 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,6 +51,7 @@ main {
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    font-size: 1.4em;
 
 }
 
@@ -68,7 +63,7 @@ main {
 }
 
 .blessed-word {
-    color: blue;
+    color: #4287f5;
 }
 
 .cursed-word {
@@ -86,18 +81,22 @@ main {
 }
 
 .end-results {
-    border: 2px solid white;
-    height: 60%;
-    width: 90%;
-    margin: 1em auto;
+    margin: 1em auto 15em auto;
     display: flex;
     flex-direction: column;
+}
+
+/*Below is to change styling of end results after rolling dice function is called*/
+
+.end-results-after {
+    margin: 1em auto;
 }
 
 #dice-img-results {
     margin-top: .5em;
     flex-grow: 2;
     text-align: center;
+    align-self: center;
 }
 
 #dice-img-results img {
@@ -107,6 +106,7 @@ main {
 #num-success {
     flex-grow: 1;
     text-align: center;
+    font-size: 1.4em;
 }
 
 .successRoll {
@@ -117,7 +117,18 @@ main {
     border: 2px solid red;
 }
 
+.overview-home-btn {
+    margin-top: 1em;
+}
+
+.dice-img-bottom {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 50%;
+}
+
 footer {
-    flex-shrink: 0;
+    flex: 1 1 0;
     margin-top: 1em;
 }
