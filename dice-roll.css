@@ -81,15 +81,8 @@ main {
 }
 
 .end-results {
-    margin: 1em auto 15em auto;
     display: flex;
     flex-direction: column;
-}
-
-/*Below is to change styling of end results after rolling dice function is called*/
-
-.end-results-after {
-    margin: 1em auto;
 }
 
 #dice-img-results {
@@ -97,6 +90,7 @@ main {
     flex-grow: 2;
     text-align: center;
     align-self: center;
+    min-height: 38vh;
 }
 
 #dice-img-results img {
