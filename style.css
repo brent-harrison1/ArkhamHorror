@@ -93,6 +93,10 @@ nav div {
   align-items: center;
 }
 
+.media-query-img {
+  display: none;
+}
+
 .image-section { 
   margin: 2em 0;
   display: flex;
@@ -109,7 +113,7 @@ nav div {
 }
 
 .image-section img:nth-child(1),
-.image-section img:nth-child(2) {
+.image-section img:nth-child(3) {
   margin-bottom: 1em;
 }
 
@@ -146,4 +150,183 @@ footer {
   padding: 1em 1em 0 1em;
   flex-shrink: 0;
   font-size: 1em;
+}
+
+
+@media (min-width: 700px) {
+  body {
+    background-image: url(images/ark1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 100vw;
+  }
+  
+  /*Below is everything to do with the header*/
+  
+  header {
+    text-align: center;
+    width: 70vw;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 1em;
+    color: rgb(222, 226, 2);
+    background: black;
+    flex-shrink: 0;
+    font-style: italic;
+  }
+  
+  header h1,
+  header h2 {
+    margin: .2em;
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 4em;
+  }
+  
+  header h2 {
+    font-size: 1.3em;
+  }
+  
+  /*Below is everything to do with the main*/
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+  }
+  
+  /*Below is everything to do with nav*/
+
+  a {
+    color: rgb(0, 173, 23);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5em 2.5em 4em 2.5em;
+    height: 20em;
+    width: 100vw;
+  }
+  
+  nav div {
+    border: 2px solid black;
+    border-radius: 0;
+    flex-basis: 25%;
+    text-align: center;
+    padding: .3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overview,
+  .rules,
+  .dice-simulator {
+    font-size: 2.8em;
+  }
+
+  .overview {
+    background-image: url(images/ark2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .rules {
+    background-image: url(images/ark3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .dice-simulator {
+    background-image: url(images/ark4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .quote-section {
+    box-shadow: 8px 8px 8px #170000;
+    background: rgba(0, 15, 1, 0.9);
+    text-align: center;
+    font-style: italic;
+    font-size: 1.8em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    max-width: 70vw;
+  }
+  
+  .image-section { 
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+  }
+  
+  .image-section img {
+    border: 2px solid black;
+    border-radius: 10%;
+    display: inline-block;
+    flex-basis: 20%;
+  }
+  
+  .image-section img:nth-child(1),
+  .image-section img:nth-child(2) {
+    margin-bottom: 1em;
+  }
+  
+  .buy-section {
+    margin: 0 1em;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    bottom: 10px;
+  }
+  
+  .buy-section p {
+    padding: 0 20px;
+    color: rgb(255, 255, 0);
+  }
+  
+  .buy-section .buy-button {
+    padding: .4em 2em;
+    border: 4px solid black;
+    position: relative;
+    bottom: 8px;
+    background-color: rgb(90, 90, 90);
+    color: rgb(170, 2, 2);
+    font-weight: bold;
+  }
+  
+  .buy-section a .buy-button {
+    font-size: 1.5em;
+  }
+  
+  /*Below is everything to do with the footer*/
+  
+  footer {
+    padding: 1em 1em 0 1em;
+    flex-shrink: 0;
+    font-size: 1.5em;
+  }
 }

@@ -46,3 +46,78 @@ body {
     border: 2px solid black;
     padding: .5em;
 }
+
+
+@media (min-width: 700px) {
+    body {
+        background-color: rgb(61, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overview-header {
+        font-size: 1.7em;
+        background-color: rgb(112, 79, 79);
+    }
+
+    .overview-header h1 {
+        margin: .5em 1.6em;
+    }
+
+    .overview-header h1 span {
+        color: blue;
+    }
+
+    .overview-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .overview-video {
+        margin: 1.2em 9em .5em;
+    }
+
+    .overview-video iframe {
+        height: 500px;
+        border: 6px solid black;
+    }
+
+    .overview-body-text {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .p1 {
+        order: 1;
+    }
+
+    .p2 {
+        order: 2;
+    }
+
+    .p1,
+    .p2 {
+        flex-basis: 40%;
+        margin: auto 1em;
+        padding: .5em;
+        border: 3px solid black;
+        background-color: rgb(173, 122, 55);
+        color: black;
+        font-weight: bold;
+    }
+
+    .overview-image {
+        order: 3;
+        margin: 1em;
+    }
+
+    footer {
+        background-color: black;
+    }
+}
